@@ -1,0 +1,7 @@
+<script>
+    var firstname, secondname, result
+    firstname = prompt("Enter first name")
+    secondname = prompt("Enter last name")
+    result = firstname + secondname 
+    alert("hello, " + result)
+</script>

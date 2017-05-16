@@ -1,0 +1,12 @@
+<script>
+    var first
+    var name
+    first = name = prompt("Enter new name, or OK to end")
+    while (name != "" && name != null) {
+    	if (name < first)
+		first = name
+    	name = prompt("Enter new name, or OK to end")
+    }
+    document.write("
+ First name alphabetically = " + first)
+</script>

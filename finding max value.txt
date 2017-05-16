@@ -1,0 +1,11 @@
+<script>
+    var max = 0
+    var num
+    num = prompt("Enter new value, or 0 to end")
+    while (num != 0) {
+	if (parseFloat(num) > max)
+            max = num
+    	num = prompt("Enter new value, or 0 to end")
+    }
+    document.write("<P> Max = " + max)
+</script>

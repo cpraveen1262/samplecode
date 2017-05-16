@@ -1,0 +1,28 @@
+ var name, i = 0, j, temp
+    var names = new Array()
+
+   
+    name = prompt("Enter new name, or OK to end")
+    while (name != "") {
+        document.write("<br> " + name)
+    	names[names.length] = name
+    	name = prompt("Enter new name, or OK to end")
+    }
+
+    document.write("<P> " + names.length + " names")
+    
+    
+    for (i = 0; i < names.length-1; i++) {
+        for (j = i+1; j < names.length; j++) {
+            if (names[i] > names[j]) {
+                temp = names[i]
+                names[i] = names[j]
+                names[j] = temp
+            }
+        }
+    }
+
+    
+    for (i = 0; i < names.length; i++) {
+        document.write("<br> " + names[i])
+    }
